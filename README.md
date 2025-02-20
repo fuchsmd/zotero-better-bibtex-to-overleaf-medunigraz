@@ -1,4 +1,5 @@
-# Zotero Better-BibTex to Overleaf Local Sync
+# Zotero Better-BibTex to Overleaf Local Sync for Self-Hosted Overleaf-Instance by the Medical University of Graz
+*Original idea for adaptation of [vantezzen](https://github.com/vantezzen)'s Firefox extension by [@sorlob](https://github.com/sorlob/).*
 
 This browser extension allows syncing your Zotero library with your Overleaf project using the local sync feature of [Zotero Better-BibTeX](https://retorque.re/zotero-better-bibtex/).
 
@@ -15,11 +16,17 @@ Open your browser and load the appropriate development build.
 For further guidance, [visit the Plasmo Documentation](https://docs.plasmo.com/)
 
 ## Making production build
-
-Run the following:
+### Firefox
+Run:
 
 ```bash
-pnpm build
+pnpm build-ff
+```
+## Chrome
+Run:
+
+```bash
+pnpm build --zip
 ```
 
 This should create a production bundle for your extension, ready to be zipped and published to the stores.
