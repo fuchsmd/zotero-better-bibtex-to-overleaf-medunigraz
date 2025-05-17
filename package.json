@@ -1,11 +1,12 @@
 {
-  "name": "zotero-better-bibtex-to-overleaf",
-  "displayName": "Zotero Better-BibTex to Overleaf Local Sync",
+  "name": "zotero-better-bibtex-to-overleaf-medunigraz",
+  "displayName": "Zotero Better-BibTex to Overleaf Local Sync for MedUniGraz",
   "version": "0.1.0",
-  "description": "Sync Zotero Better Bibtex export to Overleaf locally",
-  "author": "vantezzen",
+  "description": "Sync Zotero Better Bibtex export to Overleaf hosted by the Medical University of Graz. Idea by sorlob, porting by fuchsmd.",
+  "author": "fuchsmd",
   "scripts": {
     "dev": "plasmo dev",
+    "dev-ff": "plasmo dev --target=firefox-mv2",
     "build": "plasmo build --zip",
     "build-ff": "plasmo build --target=firefox-mv2 --zip",
     "test": "plasmo test"
@@ -21,9 +22,10 @@
     "clsx": "^2.1.0",
     "lucide": "^0.307.0",
     "lucide-react": "^0.307.0",
-    "plasmo": "0.84.0",
+    "plasmo": "0.90.3",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "svgo": "3.0.2",
     "tailwind-merge": "^2.2.0",
     "tailwindcss-animate": "^1.0.7"
   },
@@ -41,7 +43,7 @@
   },
   "manifest": {
     "host_permissions": [
-      "https://*.overleaf.com/project/*",
+      "https://overleaf.medunigraz.at/project/*",
       "http://127.0.0.1/better-bibtex/export/collection/*",
       "http://localhost/better-bibtex/export/collection/*",
       "http://127.0.0.1:23119/better-bibtex/export/collection/*",
@@ -49,6 +51,16 @@
     ],
     "permissions": [
       "scripting"
+    ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "@parcel/watcher",
+      "@swc/core",
+      "esbuild",
+      "lmdb",
+      "msgpackr-extract",
+      "sharp"
     ]
   }
 }
