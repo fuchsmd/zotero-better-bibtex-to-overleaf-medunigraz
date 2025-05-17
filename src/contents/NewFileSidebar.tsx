@@ -10,7 +10,7 @@ import type {
 import NewFileSidebarButton from "~components/NewFileSidebarButton"
 
 export const config: PlasmoCSConfig = {
-  matches: ["https://*.overleaf.com/project/*"],
+  matches: ["https://overleaf.medunigraz.at/project/*"],
   world: "MAIN"
 }
 
@@ -25,7 +25,7 @@ const NewFileSidebar = () => {
 }
 
 export const getInlineAnchor: PlasmoGetInlineAnchor = async () => {
-  return document.querySelector(".modal-new-file-list .list-unstyled")
+  return document.querySelector(".modal-new-file--list .list-unstyled")
 }
 
 export default NewFileSidebar
