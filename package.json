@@ -1,8 +1,8 @@
 {
-  "name": "zotero-better-bibtex-to-overleaf-medunigraz",
-  "displayName": "Zotero Better-BibTex to Overleaf Local Sync for MedUniGraz",
+  "name": "zotero-overleaf-medunigraz",
+  "displayName": "Zotero Sync for MedUni Graz Overleaf",
   "version": "0.1.0",
-  "description": "Sync Zotero Better Bibtex export to Overleaf hosted by the Medical University of Graz. Idea by sorlob, porting by fuchsmd.",
+  "description": "Sync Zotero Better Bibtex export to Overleaf hosted by the Medical University of Graz.",
   "author": "fuchsmd",
   "scripts": {
     "dev": "plasmo dev",

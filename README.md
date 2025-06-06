@@ -45,6 +45,10 @@ Run the development server:
 ```bash
 pnpm dev
 ```
+or for Firefox:
+```bash
+pnpm dev-ff
+```
 
 Open your browser and load the appropriate development build.
 
